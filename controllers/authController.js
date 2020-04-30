@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 
 
 
-exports.autenticarUsuario = async(req , res) =>{
+exports.autenticarUsuario = async (req , res) =>{
     //Revisar si hay errores 
     const errores = validationResult(req);
     if( !errores.isEmpty() ) {
